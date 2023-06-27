@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS demo</title>
+
+    <style>
+
+        * {
+            font-size: 15px;
+        }
+
+        body {
+            background-color: aqua; 
+            font-size: 16px;}
+
+        header {
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 2em;
+            /* default value for 1em is 16px*/
+            text-align: center;}
+        
+        .container {
+            background-color: rgb(117, 236, 197); 
+            border: black dashed; 
+            width: 50%;
+        }
+
+        #child-item {
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        li:hover {
+            color: green;
+        }
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+ 
+    <header>CSS Selectors</header>
+    <div class="container">
+        <ul>
+            <li> List Item
+                <ul>
+                    <li id="child-item">Child Item</li>
+                </ul>
+            </li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+    </div>
+
+</body>
+
+
+
+</html>
